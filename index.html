@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <title>mbilal-x | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+  <div class="faq-panel">
+    <div class="faq-panel__image"></div>
+    <div class="faq-panel__faq-text">
+      <div class="faq-text__title">FAQ</div>
+      <!-- question1  -->
+      <div class="faq-text__Q-item">
+        <div class="Q-item__question">
+          <div class="question__text">How many team members can I invite?</div>
+          <span class="question__icon"></span>
+        </div>
+        <div class="Q-item__answer">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</div>
+      </div>
+      <!-- question2 -->
+      <div class="faq-text__Q-item">
+        <div class="Q-item__question">
+          <div class="question__text">What is the maximum file upload size?</div>
+          <span class="question__icon"></span>
+        </div>
+        <div class="Q-item__answer">No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
+      </div>
+      <!-- question3 -->
+      <div class="faq-text__Q-item">
+        <div class="Q-item__question">
+          <div class="question__text">How do I reset my password?</div>
+          <span class="question__icon"></span>
+        </div>
+        <div class="Q-item__answer">Click “Forgot password” from the login page or “Change password” from your profile
+          page.
+          A reset link will be emailed to you.</div>
+      </div>
+      <!-- question4 -->
+      <div class="faq-text__Q-item">
+        <div class="Q-item__question">
+          <div class="question__text">Can I cancel my subscription?</div>
+          <span class="question__icon"></span>
+        </div>
+        <div class="Q-item__answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
+      </div>
+      <!-- question5 -->
+      <div class="faq-text__Q-item">
+        <div class="Q-item__question">
+          <div class="question__text">Do you provide additional support?</div>
+          <span class="question__icon"></span>
+        </div>
+        <div class="Q-item__answer">Chat and email support is available 24/7. Phone lines are open during normal
+          business
+          hours.
+        </div>
+      </div>
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+<!-- my script  -->
+<script src="./app.js"></script>
 </body>
+
 </html>
