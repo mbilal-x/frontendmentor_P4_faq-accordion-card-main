@@ -1,10 +1,27 @@
-const question = document.querySelector('.Q-item__question');
-const answer = document.querySelector('.Q-item__answer');
-const icon = document.querySelector('.question__icon');
+let questions = document.querySelectorAll('.Q-item__question');
 
-question.addEventListener("click", function(){
-    answer.classList.toggle('Q-item__answer-toggle');
-    question.classList.toggle('Q-item__question-toggle');
+questions.forEach(question => {
+  question.addEventListener("click", function() {
+
+    this.classList.toggle('Q-item__question-toggle');
+
+    let answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+            answer.style.display = "none";
+          } else {
+            answer.style.display = "block";
+          }
+
+    let icon = this.querySelector('.question__icon');
     icon.classList.toggle('question__icon-toggle');
-});
+  })
+})
 
+
+
+// answer toggle logic 
+// if (answer.style.display === "block") {
+//     answer.style.display = "none";
+//   } else {
+//     answer.style.display = "block";
+//   }

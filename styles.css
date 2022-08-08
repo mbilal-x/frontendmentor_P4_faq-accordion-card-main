@@ -6,7 +6,7 @@
 body{
     font-size: 0.8rem;
     font-family: 'Kumbh Sans', sans-serif;
-    height: 100vh;
+    min-height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,6 @@ body{
     display: none;
 }
 
-
 /* toggle state css */
 .Q-item__answer-toggle{
     display: block;
@@ -96,10 +95,14 @@ body{
         font-size: 13px;
     }
 
+    body{
+        min-height: 100vh;
+    }
+
     .faq-panel{
         flex-direction: row;
         width: 630px;
-        height: 400px;
+        min-height: 400px;
         padding: 0;
         border-radius: 15px;
     }
