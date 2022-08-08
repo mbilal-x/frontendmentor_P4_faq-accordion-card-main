@@ -47,9 +47,13 @@ I worked on mobile design first, set HTML, added CSS, and then finally added Js 
 I learned why relative units are so useful. After I moved on to making the desktop design, I had to reset all margin and padding properties, here I hoped I had used *rem* instead of *px* everywhere.
 I also didn't know how to use *querySelectorAll* is only had some practice with *querySelector*, that's why only the 1st question is working on click.
 
+update: I have updated the js logic
+
 To see how you can add code snippets, see below:
 
 ```js
+
+// old
 const question = document.querySelector('.Q-item__question');
 const answer = document.querySelector('.Q-item__answer');
 const icon = document.querySelector('.question__icon');
@@ -59,6 +63,27 @@ question.addEventListener("click", function(){
     question.classList.toggle('Q-item__question-toggle');
     icon.classList.toggle('question__icon-toggle');
 });
+
+
+// new
+let questions = document.querySelectorAll('.Q-item__question');
+
+questions.forEach(question => {
+  question.addEventListener("click", function() {
+
+    this.classList.toggle('Q-item__question-toggle');
+
+    let answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+            answer.style.display = "none";
+          } else {
+            answer.style.display = "block";
+          }
+
+    let icon = this.querySelector('.question__icon');
+    icon.classList.toggle('question__icon-toggle');
+  })
+})
 ```
 
 ### Continued development
