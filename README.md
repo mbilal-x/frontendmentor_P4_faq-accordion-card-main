@@ -47,9 +47,8 @@ I worked on mobile design first, set HTML, added CSS, and then finally added Js 
 I learned why relative units are so useful. After I moved on to making the desktop design, I had to reset all margin and padding properties, here I hoped I had used *rem* instead of *px* everywhere.
 I also didn't know how to use *querySelectorAll* is only had some practice with *querySelector*, that's why only the 1st question is working on click.
 
-update: I have updated the js logic
+ -> update: I have updated the js logic
 
-To see how you can add code snippets, see below:
 
 ```js
 
@@ -88,9 +87,9 @@ questions.forEach(question => {
 
 ### Continued development
 stuff to look into: 
-  - js Events and DOM
-  - CSS multiple background and their positioning
-  - relative units and how to properly use them
+  - js Events and DOM                                  [done]
+  - CSS multiple background and their positioning      [done]
+  - relative units and how to properly use them        [done]
 
 ## Author
 
